@@ -36,7 +36,7 @@ async function init() {
     });
 
     return client.connect().then(async () => {
-        console.log(`Connected to postgres db at host ${HOST}`);
+        console.log(`Connected to postgres db at host ${HOST} u dzec`);
         // Run the SQL instruction to create the table if it does not exist
         await client.query('CREATE TABLE IF NOT EXISTS todo_items (id varchar(36), name varchar(255), completed boolean)');
         console.log('Connected to db and created table todo_items if it did not exist');
